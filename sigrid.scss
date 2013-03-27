@@ -1,0 +1,130 @@
+/*============
+    Sigrid
+============*/
+
+// The grid width
+$grid: 960px;
+
+// The gutter width
+$gutter: 1.5em;
+
+// The type of class used for the grid
+//
+// Replace the dot with a percentage sign to use placeholder selectors
+// instead of regular classes.
+$x: unquote(".");
+
+/*----------------
+    Box-sizing
+----------------*/
+
+#{$x}grid,
+#{$x}row,
+#{$x}unit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------
+    Grid
+----------*/
+
+/* Container */
+
+#{$x}grid {
+  max-width: $grid;
+  margin: 0 auto;
+}
+
+/* Row */
+
+#{$x}row {
+
+  margin-left: -#{$gutter};
+
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+
+}
+
+/* Unit */
+
+#{$x}unit {
+  padding-left: $gutter;
+  float: left;
+}
+
+/*------------
+    Widths
+------------*/
+
+#{$x}one-whole {
+  width: 100%;
+}
+
+#{$x}nine-tenths {
+  width: 90%;
+}
+
+#{$x}four-fifths,
+#{$x}eight-tenths {
+  width: 80%;
+}
+
+#{$x}three-fourths,
+#{$x}three-quarters {
+  width: 75%;
+}
+
+#{$x}seven-tenths {
+  width: 70%;
+}
+
+#{$x}two-thirds {
+  width: 66.666%;
+}
+
+#{$x}three-fifths,
+#{$x}six-tenths {
+  width: 60%;
+}
+
+#{$x}one-half {
+  width: 50%;
+}
+
+#{$x}two-fifths,
+#{$x}four-tenths {
+  width: 40%;
+}
+
+#{$x}one-third {
+  width: 33.333%;
+}
+
+#{$x}three-tenths {
+  width: 30%;
+}
+
+#{$x}one-fourth,
+#{$x}one-quarter {
+  width: 25%;
+}
+
+#{$x}one-fifth,
+#{$x}two-tenths {
+  width: 20%;
+}
+
+#{$x}one-tenth {
+  width: 10%;
+}

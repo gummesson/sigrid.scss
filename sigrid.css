@@ -1,0 +1,107 @@
+/*============
+    Sigrid
+============*/
+/*----------------
+    Box-sizing
+----------------*/
+.grid,
+.row,
+.unit {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+/*----------
+    Grid
+----------*/
+/* Container */
+.grid {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+/* Row */
+.row {
+  margin-left: -1.5em;
+}
+.row:before, .row:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+.row:after {
+  clear: both;
+}
+
+/* Unit */
+.unit {
+  padding-left: 1.5em;
+  float: left;
+}
+
+/*------------
+    Widths
+------------*/
+.one-whole {
+  width: 100%;
+}
+
+.nine-tenths {
+  width: 90%;
+}
+
+.four-fifths,
+.eight-tenths {
+  width: 80%;
+}
+
+.three-fourths,
+.three-quarters {
+  width: 75%;
+}
+
+.seven-tenths {
+  width: 70%;
+}
+
+.two-thirds {
+  width: 66.666%;
+}
+
+.three-fifths,
+.six-tenths {
+  width: 60%;
+}
+
+.one-half {
+  width: 50%;
+}
+
+.two-fifths,
+.four-tenths {
+  width: 40%;
+}
+
+.one-third {
+  width: 33.333%;
+}
+
+.three-tenths {
+  width: 30%;
+}
+
+.one-fourth,
+.one-quarter {
+  width: 25%;
+}
+
+.one-fifth,
+.two-tenths {
+  width: 20%;
+}
+
+.one-tenth {
+  width: 10%;
+}
