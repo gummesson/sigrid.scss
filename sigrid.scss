@@ -3,7 +3,7 @@
 ============*/
 
 // The grid width
-$grid: 960px;
+$width: 960px;
 
 // The gutter width
 $gutter: 1.5em;
@@ -33,7 +33,7 @@ $x: unquote(".");
 /* Container */
 
 #{$x}grid {
-  max-width: $grid;
+  max-width: $width;
   margin: 0 auto;
 }
 
