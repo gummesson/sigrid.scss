@@ -40,7 +40,6 @@ $x: unquote(".");
 /* Row */
 
 #{$x}row {
-
   margin-left: -#{$gutter};
 
   &:before, &:after {
@@ -53,7 +52,6 @@ $x: unquote(".");
   &:after {
     clear: both;
   }
-
 }
 
 /* Unit */
