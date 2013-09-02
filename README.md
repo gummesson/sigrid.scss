@@ -25,7 +25,7 @@ A **si**mple **grid** system, written in [Sass](http://sass-lang.com/ "Syntactic
 
 **SCSS:**
 
-~~~ html
+~~~ scss 
 .container {
   @extend %grid;
 }
