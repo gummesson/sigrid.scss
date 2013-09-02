@@ -8,48 +8,53 @@ A **si**mple **grid** system, written in [Sass](http://sass-lang.com/ "Syntactic
 
 **Markup:**
 
-    <div class="grid">
-      <div class="row">
-        <div class="unit one-half">
-          ...
-        </div>
-        <div class="unit one-half">
-          ...
-        </div>
-      </div>
+~~~ html
+<div class="grid">
+  <div class="grid__row">
+    <div class="grid__unit one-half">
+      ...
     </div>
+    <div class="grid__unit one-half">
+      ...
+    </div>
+  </div>
+</div>
+~~~
 
 ### With placeholder selectors
 
 **SCSS:**
 
-    .container {
-      @extend %grid;
-    }
+~~~ html
+.container {
+  @extend %grid;
+}
 
-    .header {
-      @extend %row;
-    }
+.header {
+  @extend %grid__row;
+}
 
-    .banner,
-    .nav {
-      @extend %unit;
-      @extend %one-half;
-    }
+.banner,
+.nav {
+  @extend %grid__unit;
+  @extend %one-half;
+}
+~~~
 
 **Markup:**
 
-    <div class="container">
-      <header class="header">
-        <div class="banner">
-          ...
-        </div>
-        <nav class="nav">
-          ...
-        </nav>
-      </header>
+~~~ html
+<div class="container">
+  <header class="header">
+    <div class="banner">
+      ...
     </div>
-
+    <nav class="nav">
+      ...
+    </nav>
+  </header>
+</div>
+~~~
 
 ## License
 
