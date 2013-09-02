@@ -19,8 +19,8 @@ $x: unquote(".");
 ----------------*/
 
 #{$x}grid,
-#{$x}row,
-#{$x}unit {
+#{$x}grid__row,
+#{$x}grid__unit {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -39,7 +39,7 @@ $x: unquote(".");
 
 /* Row */
 
-#{$x}row {
+#{$x}grid__row {
   margin-left: -#{$gutter};
 
   &:before, &:after {
@@ -56,7 +56,7 @@ $x: unquote(".");
 
 /* Unit */
 
-#{$x}unit {
+#{$x}grid__unit {
   padding-left: $gutter;
   float: left;
 }

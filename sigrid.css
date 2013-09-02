@@ -5,8 +5,8 @@
     Box-sizing
 ----------------*/
 .grid,
-.row,
-.unit {
+.grid__row,
+.grid__unit {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -22,21 +22,21 @@
 }
 
 /* Row */
-.row {
+.grid__row {
   margin-left: -1.5em;
 }
-.row:before, .row:after {
+.grid__row:before, .grid__row:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.row:after {
+.grid__row:after {
   clear: both;
 }
 
 /* Unit */
-.unit {
+.grid__unit {
   padding-left: 1.5em;
   float: left;
 }
