@@ -41,6 +41,7 @@ $x: unquote(".");
 
 #{$x}grid__row {
   margin-left: -#{$gutter};
+  position: relative; // IE8 "hack" to make negative margins work.
 
   &:before, &:after {
     content: "\0020";

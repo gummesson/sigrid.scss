@@ -24,6 +24,7 @@
 /* Row */
 .grid__row {
   margin-left: -1.5em;
+  position: relative;
 }
 .grid__row:before, .grid__row:after {
   content: "\0020";
