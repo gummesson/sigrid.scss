@@ -24,11 +24,6 @@ A **si**mple **grid** system, written in [Sass](http://sass-lang.com/).
 **SCSS:**
 
 ~~~ scss 
-.container {
-  margin: 0 auto;
-  max-width: 960px;
-}
-
 .header {
   @extend %grid;
 }
