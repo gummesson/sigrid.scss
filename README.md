@@ -43,16 +43,14 @@ A **si**mple **grid** system, written in [Sass](http://sass-lang.com/).
 **Markup:**
 
 ~~~ html
-<div class="container">
-  <header class="header">
-    <div class="banner">
-      ...
-    </div>
-    <nav class="nav">
-      ...
-    </nav>
-  </header>
-</div>
+<header class="header">
+  <div class="banner">
+    ...
+  </div>
+  <nav class="nav">
+    ...
+  </nav>
+</header>
 ~~~
 
 ## License
