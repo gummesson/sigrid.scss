@@ -14,7 +14,6 @@
 /*----------
     Grid
 ----------*/
-/* Row */
 .grid {
   margin-left: -16px;
   position: relative;
@@ -29,7 +28,6 @@
   clear: both;
 }
 
-/* Unit */
 .grid__item {
   padding-left: 16px;
   float: left;

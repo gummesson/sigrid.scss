@@ -26,8 +26,6 @@ $x: unquote(".");
     Grid
 ----------*/
 
-/* Row */
-
 #{$x}grid {
   margin-left: -#{$gutter};
   position: relative; // IE8 "hack" to make negative margins work.
@@ -44,12 +42,10 @@ $x: unquote(".");
   }
 }
 
-/* Unit */
-
-#{$x}grid__item {
-  padding-left: $gutter;
-  float: left;
-}
+  #{$x}grid__item {
+    padding-left: $gutter;
+    float: left;
+  }
 
 /*------------
     Widths
