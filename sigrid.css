@@ -5,8 +5,7 @@
     Box-sizing
 ----------------*/
 .grid,
-.grid__row,
-.grid__unit {
+.grid__item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -15,30 +14,24 @@
 /*----------
     Grid
 ----------*/
-/* Container */
-.grid {
-  max-width: 60em;
-  margin: 0 auto;
-}
-
 /* Row */
-.grid__row {
-  margin-left: -1.5em;
+.grid {
+  margin-left: -16px;
   position: relative;
 }
-.grid__row:before, .grid__row:after {
+.grid:before, .grid:after {
   content: "\0020";
   display: block;
   height: 0;
   overflow: hidden;
 }
-.grid__row:after {
+.grid:after {
   clear: both;
 }
 
 /* Unit */
-.grid__unit {
-  padding-left: 1.5em;
+.grid__item {
+  padding-left: 16px;
   float: left;
 }
 

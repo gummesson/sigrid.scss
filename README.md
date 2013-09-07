@@ -1,6 +1,6 @@
 # Sigrid
 
-A **si**mple **grid** system, written in [Sass](http://sass-lang.com/ "Syntactically awesome stylesheets").
+A **si**mple **grid** system, written in [Sass](http://sass-lang.com/).
 
 ## Usage
 
@@ -10,13 +10,11 @@ A **si**mple **grid** system, written in [Sass](http://sass-lang.com/ "Syntactic
 
 ~~~ html
 <div class="grid">
-  <div class="grid__row">
-    <div class="grid__unit one-half">
-      ...
-    </div>
-    <div class="grid__unit one-half">
-      ...
-    </div>
+  <div class="grid__item  one-half">
+    ...
+  </div>
+  <div class="grid__item  one-half">
+    ...
   </div>
 </div>
 ~~~
@@ -27,16 +25,17 @@ A **si**mple **grid** system, written in [Sass](http://sass-lang.com/ "Syntactic
 
 ~~~ scss 
 .container {
-  @extend %grid;
+  margin: 0 auto;
+  max-width: 960px;
 }
 
 .header {
-  @extend %grid__row;
+  @extend %grid;
 }
 
 .banner,
 .nav {
-  @extend %grid__unit;
+  @extend %grid__item;
   @extend %one-half;
 }
 ~~~

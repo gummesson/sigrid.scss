@@ -2,11 +2,8 @@
     Sigrid
 ============*/
 
-// The grid width
-$width: 60em;
-
 // The gutter width
-$gutter: 1.5em;
+$gutter: 16px;
 
 // The type of class used for the grid
 //
@@ -19,8 +16,7 @@ $x: unquote(".");
 ----------------*/
 
 #{$x}grid,
-#{$x}grid__row,
-#{$x}grid__unit {
+#{$x}grid__item {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box;
@@ -30,16 +26,9 @@ $x: unquote(".");
     Grid
 ----------*/
 
-/* Container */
-
-#{$x}grid {
-  max-width: $width;
-  margin: 0 auto;
-}
-
 /* Row */
 
-#{$x}grid__row {
+#{$x}grid {
   margin-left: -#{$gutter};
   position: relative; // IE8 "hack" to make negative margins work.
 
@@ -57,7 +46,7 @@ $x: unquote(".");
 
 /* Unit */
 
-#{$x}grid__unit {
+#{$x}grid__item {
   padding-left: $gutter;
   float: left;
 }
