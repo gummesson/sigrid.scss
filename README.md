@@ -1,10 +1,10 @@
-# Sigrid
+# sigrid.scss
 
 A **si**mple **grid** system, written in [Sass](http://sass-lang.com/).
 
 ## Requirements
 
-You need to use `box-sizing: border-box;`.
+You need to use `box-sizing: border-box;` in order for the grid to work properly.
 
 ## Configuation
 
