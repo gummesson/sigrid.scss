@@ -1,0 +1,33 @@
+//===============
+//  sigrid.scss
+//===============
+
+// Import the fallback values
+@import "defaults";
+
+//--------
+//  Grid
+//--------
+
+// 1. Hack to make negative margins work in IE8.
+
+#{$x}grid {
+  margin-left: -#{$sigrid-gutter};
+  position: relative; // [1]
+
+  &:before, &:after {
+    content: "\0020";
+    display: block;
+    height: 0;
+    overflow: hidden;
+  }
+
+  &:after {
+    clear: both;
+  }
+}
+
+  #{$x}grid__item {
+    padding-left: $sigrid-gutter;
+    float: left;
+  }
