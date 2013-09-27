@@ -2,6 +2,18 @@
 
 A **si**mple **grid** system, written in [Sass](http://sass-lang.com/).
 
+## Requirements
+
+You need to use `box-sizing: border-box;`.
+
+## Configuation
+
+### Classes
+
+#### `$use-classes`
+
+If this is set to `true`, classes will be used in the generated code instead of placeholder selectors.
+
 ## Usage
 
 ### With regular classes
