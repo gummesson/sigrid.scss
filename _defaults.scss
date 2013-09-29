@@ -3,6 +3,9 @@
 //-------------
 
 // The gutter width
+//
+// This variable should preferably be the same as the base spacing unit used
+// in the site's layout.
 $sigrid-gutter: 1.5em!default;
 
 // The type of classes used
@@ -10,11 +13,3 @@ $sigrid-gutter: 1.5em!default;
 // If this is set to `true`, classes will be used in the generated code
 // instead of placeholder selectors.
 $use-classes: true!default;
-
-// `x` is used as a variable name for the classes/placeholder selectors
-// since it's short.
-$x: unquote(".")!default;
-
-@if ($use-classes == false) {
-  $x: unquote("%");
-}
