@@ -8,6 +8,12 @@ You need to use `box-sizing: border-box;` in order for the grid to work properly
 
 ## Configuation
 
+### Gutter
+
+#### `$sigrid-gutter`
+
+This sets the default gutter used throughout the grid. It defaults to `1.5em`.
+
 ### Classes
 
 #### `$use-classes`
@@ -22,10 +28,10 @@ If this is set to `true`, classes will be used in the generated code instead of 
 
 ~~~ html
 <div class="grid">
-  <div class="grid__item  one-half">
+  <div class="grid__item">
     ...
   </div>
-  <div class="grid__item  one-half">
+  <div class="grid__item">
     ...
   </div>
 </div>
@@ -43,7 +49,6 @@ If this is set to `true`, classes will be used in the generated code instead of 
 .banner,
 .nav {
   @extend %grid__item;
-  @extend %one-half;
 }
 ~~~
 
